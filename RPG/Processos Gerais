@@ -1,0 +1,2 @@
+#Logicas de aleatoriedade
+d4 = int(random.random(0 , 4))

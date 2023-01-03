@@ -1,0 +1,13 @@
+'''nome = str(input('Digite um nome completo: '))
+print(nome.upper())
+print(nome.lower())
+print(len(nome.replace(' ','')))
+print(len(nome.split()[0]))'''
+nome = str(input('Digite seu nome completo: '))
+print('Analisando seu nome...')
+print('Seu nome maiusculo é: {}'.format(nome.upper()))
+print('Seu nome minusculo é: {}'.format(nome.lower()))
+print('Seu nome tem {} letras.'.format(len(nome) - nome.count(' ')))
+print('Seu nome tem {} letras'.format(nome.find(' ')))
+separa = nome.split()
+print('Seu nome é {} e ele tem {} letras.'.format(separa[0], len(separa[0])))
