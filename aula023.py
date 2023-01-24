@@ -12,4 +12,4 @@ else:
     print(f'O resultado é {r:.1f}')
 finally:
     print('Volte sempre! Muito Obrigado!')
-    
+
