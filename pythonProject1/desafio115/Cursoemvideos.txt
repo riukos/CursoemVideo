@@ -1,0 +1,5 @@
+ana;40
+maria;25
+marcelo;26
+pedro;18
+tiago;50

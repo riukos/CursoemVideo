@@ -1,13 +1,23 @@
 from pythonProject1.desafio115.lib.interface import *
+from pythonProject1.desafio115.lib.arquivo import *
+from time import sleep
+
+
+arq = 'Cursoemvideos.txt'
+if not arquivoexiste(arq):
+    Criararquivo(arq)
+
+
 while True:
-    resposta = menu(['Criar Arquivo', 'Cadastrar Pessoas', 'Listar pessoas', 'Sair do Sistema'])
+    resposta = menu(['Cadastrar Pessoas', 'Listar pessoas', 'Sair do Sistema'])
     if resposta == 1:
+        # cadastrar pessoas
         cab('Opção 1')
-    elif resposta == 2 :
-        cab('Opção 2')
+    elif resposta == 2:
+        # Listar pessoas
+        Lerarquivo(arq)
     elif resposta == 3:
-        cab('Opção 3')
-    elif resposta == 4:
+        # Sair
         cab('Saindo do sistema... Até logo!')
         break
     else:
