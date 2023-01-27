@@ -12,7 +12,10 @@ while True:
     resposta = menu(['Cadastrar Pessoas', 'Listar pessoas', 'Sair do Sistema'])
     if resposta == 1:
         # cadastrar pessoas
-        cab('Opção 1')
+        cab('NOVO CADASTRO')
+        nome = str(input('Nome: '))
+        idade = leiaInt('Idade: ')
+        cadastrar(arq, nome, idade)
     elif resposta == 2:
         # Listar pessoas
         Lerarquivo(arq)
